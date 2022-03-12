@@ -1,6 +1,6 @@
 {
   "name": "@internal-staff-portal/backend-shared",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "The \"shared\" backend module of the Internal-Staff-Portal.",
   "main": "dist/index.js",
   "repository": "https://github.com/internal-staff-portal/backend-shared.git",
@@ -13,12 +13,11 @@
   },
   "dependencies": {
     "@authfunctions/express": "^3.2.6",
-    "@types/express": "^4.17.13",
-    "@types/socket.io": "^3.0.2",
     "mongoose": "^6.2.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "^17.0.21",
     "@types/uuid": "^8.3.4",
     "rimraf": "^3.0.2",
