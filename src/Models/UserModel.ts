@@ -19,7 +19,7 @@ const UserSchema = new Schema<IUser>({
   },
   active: {
     type: Boolean,
-    unique: true,
+    required: true,
     default: true,
   },
   email: {
