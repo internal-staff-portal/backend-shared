@@ -1,3 +1,4 @@
+import { Namespace } from "socket.io";
 import { NextFunction, Request, Response } from "express";
 
 interface CoreAuthValues {
@@ -12,4 +13,5 @@ export type LogFunction = (level: LogLevels, message: string) => void;
 export interface CoreValues {
   auth: CoreAuthValues;
   logger: LogFunction;
+  createNamespace: (path: `/${string}`) => Namespace
 }
