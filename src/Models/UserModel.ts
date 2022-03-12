@@ -1,13 +1,17 @@
 import { model, Schema } from "mongoose";
 import { v4 } from "uuid";
 
-//the interface for a user
-export interface IUser {
+//a short interface of a user
+export interface IShortUser {
   _id: string;
-  active: boolean;
   email: string;
-  hashedPassword: string;
   username: string;
+}
+
+//the interface for a user
+export interface IUser extends IShortUser {
+  active: boolean;
+  hashedPassword: string;
 }
 
 //the user schema

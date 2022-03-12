@@ -1,1 +1,1 @@
-export { IUser, UserModel } from "./UserModel";
+export { IUser, IShortUser, UserModel } from "./UserModel";
