@@ -4,6 +4,7 @@ import { v4 } from "uuid";
 //the interface for a user
 export interface IUser {
   _id: string;
+  active: boolean;
   email: string;
   hashedPassword: string;
   username: string;
@@ -15,6 +16,11 @@ const UserSchema = new Schema<IUser>({
     default: v4,
     type: String,
     required: true,
+  },
+  active: {
+    type: Boolean,
+    unique: true,
+    default: true,
   },
   email: {
     type: String,
