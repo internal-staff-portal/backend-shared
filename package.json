@@ -1,6 +1,6 @@
 {
   "name": "@internal-staff-portal/backend-shared",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The \"shared\" backend module of the Internal-Staff-Portal.",
   "main": "dist/index.js",
   "repository": "https://github.com/internal-staff-portal/backend-shared.git",
